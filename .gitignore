@@ -1,3 +1,9 @@
+.prettierrc.json
+*.scss
+main.css
+main.css.map
+SASS
+mobile-menu2.js
 # Logs
 logs
 *.log

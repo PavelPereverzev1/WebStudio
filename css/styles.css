@@ -276,10 +276,10 @@ address {
 
   .mobile-socials {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     flex-wrap: wrap;
-    width: 328px;
-    column-gap: 56px;
+    max-width: 328px;
+    row-gap: 28px;
   }
 
   .close-mobile-menu-btn .icon {

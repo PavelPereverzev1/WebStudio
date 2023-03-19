@@ -254,11 +254,16 @@ address {
     transition: color, background-color 100ms var(--time-function);
   }
 
+  .mobile-contacts-list{
+    margin-top: 20px;
+  }
+
   .mobile-contacts-item:last-child {
     font-weight: 600;
     font-size: 36px;
     line-height: 1.11;
     color: var(--clr-iris);
+    white-space: nowrap;
     margin-bottom: 40px;
   }
 
@@ -338,6 +343,7 @@ address {
     display: block;
     position: absolute;
     bottom: 0;
+    margin-bottom: -1px;
     height: 4px;
     width: 100%;
     border-radius: 2px;
@@ -349,25 +355,28 @@ address {
     color: var(--clr-accent);
   }
 
+  .contacts-list{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    row-gap: 12px;
+    justify-content: center;
+  }
+
+  .contacts-item{
+    line-height: 0;
+  }
+  
   .contact-link {
     display: block;
     color: var(--clr-secondary);
     font-weight: 400;
     font-style: normal;
     font-size: 12px;
-    line-height: 1.33;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     white-space: nowrap;
     transition: color 250ms var(--time-function);
-  }
-
-  .contact-link.email {
-    padding-top: 24px;
-  }
-
-  .contact-link.phone {
-    padding-top: 4px;
-    padding-bottom: 10px;
   }
 
   .contact-link:hover,
@@ -384,10 +393,11 @@ address {
   .contacts-list {
     display: flex;
     column-gap: 40px;
+    flex-direction: row;
+    align-items: center;
   }
 
-  .contact-link.email,
-  .contact-link.phone {
+  .contact-link {
     padding: 24px 0;
     font-size: 16px;
     line-height: 1.5;
@@ -446,8 +456,6 @@ address {
   }
 
   .hero {
-    max-width: 480px;
-    max-height: 432px;
     padding-top: 112px;
     padding-bottom: 112px;
     background-image: linear-gradient(
@@ -484,8 +492,8 @@ address {
   }
 
   .hero {
-    max-width: 768px;
-    max-height: 440px;
+    /* max-width: 768px;
+    max-height: 440px; */
     padding-top: 112px;
     padding-bottom: 112px;
     background-image: linear-gradient(
@@ -1147,6 +1155,7 @@ address {
   .main-footer > .container {
     column-gap: 24px;
     flex-wrap: wrap;
+    padding-left: 108px;
   }
 
   .footer-title {
@@ -1158,6 +1167,7 @@ address {
   .main-footer > .container {
     column-gap: 0;
     flex-wrap: nowrap;
+    padding-left: 0;
   }
 }
 

@@ -491,9 +491,7 @@ address {
     color: var(--clr-white);
   }
 
-  .hero {
-    /* max-width: 768px;
-    max-height: 440px; */
+  .hero {    
     padding-top: 112px;
     padding-bottom: 112px;
     background-image: linear-gradient(
@@ -602,7 +600,7 @@ address {
 
 @media screen and (max-width: 408px) {
   .modal {
-    width: 100vw;
+    width: 95vw;
   }
 }
 
